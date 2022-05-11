@@ -75,7 +75,7 @@ if img_file_buffer is not None:
 
 
     result_layout = st.columns(4)
-    result_layout[0].image(edged)
-    result_layout[1].image(image)
-    result_layout[2].image(orig)
+    result_layout[0].image(orig[:,:,::-1])
+    result_layout[1].image(image[:,:,::-1])
+    result_layout[2].image(edged)
     result_layout[3].image(warped)
