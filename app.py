@@ -4,7 +4,7 @@ from skimage.filters import threshold_local
 import numpy as np
 import cv2
 import imutils
-import os 
+import os
 
 img_file_buffer = st.camera_input("Take a picture")
 
